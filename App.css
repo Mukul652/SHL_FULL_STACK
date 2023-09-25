@@ -1,0 +1,66 @@
+.app {
+  position: relative; 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  z-index: 1; 
+}
+
+.project {
+  width: calc(20% - 20px); 
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: #f0f0f0; 
+}
+
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+  z-index: 2; 
+}
+
+.close-button:hover {
+  color: #000; 
+}
+
+.project-details {
+  width: 30%; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  margin-left: 67%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  z-index: 2; 
+  display: block; 
+}
+
+.project-details.active {
+  display: block; 
+}
+
+
+.field-name {
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+.field-value {
+  margin-top: 5px; 
+}
+
